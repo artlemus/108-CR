@@ -1,0 +1,33 @@
+<div class="list">
+  
+
+  <div *ngIf="allList.length == 0" class="alert alert-danger">
+    <h6>todo-list app</h6>
+    <p>please add to your todo-list</p>
+  </div>
+
+  <input [(ngModel)]="model.listItem" name="List" type="text" />
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button (click)="save()" name="submit" class="btn btn-primary">
+        Submit
+      </button>
+      <div *ngIf="alertVisible" class="alert alert-success">
+        List item saved!
+      </div>
+    </div>
+
+    <div class="list-group">
+
+        <table class="table table-bordered table-striped">
+        <tbody>
+            <tr *ngFor="let list of allList">
+              <td>{{ list.listItem }}</td>
+              
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
