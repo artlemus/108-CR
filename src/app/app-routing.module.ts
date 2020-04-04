@@ -6,6 +6,7 @@ import { ConverterComponent } from "./components/converter/converter.component";
 import { UserRegisterComponent } from "./components/user-register/user-register.component";
 import { UserListComponent } from "./components/user-list/user-list.component";
 import { TodoListComponent } from "./components/todo-list/todo-list.component";
+import { LoginComponent } from './components/login/login.component';
 
 // register the routes (paths) for your pages
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: "converter", component: ConverterComponent },
   { path: "user/register", component: UserRegisterComponent },
   { path: "user/list", component: UserListComponent },
+  { path: "login", component: LoginComponent },
   { path: "todo", component: TodoListComponent }
 ];
 

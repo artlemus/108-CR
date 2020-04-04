@@ -11,7 +11,8 @@ export class TodoListComponent implements OnInit {
 
   model = new List();
   alertVisible = false;
-  allList : List [] = [];
+  allList: List[] = [];
+  checkBox = false;
 
   constructor(private data: DataService) {
     this.allList = data.todoList;
@@ -29,7 +30,12 @@ export class TodoListComponent implements OnInit {
     this.model = new List();
 
     this.alertVisible = true;
-    setTimeout(() => this.alertVisible = false, 2000)
+    setTimeout(() => this.alertVisible = false, 2500)
+  }
+
+  done() {
+    this.checkBox = true;
+    setTimeout(() => this.checkBox = false, 3500)
   }
 
 }

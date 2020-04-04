@@ -10,7 +10,15 @@ export class DataService {
   userList: User[] = [];
   todoList: List[] = [];
 
-  constructor() { }
+  constructor() { 
+    var admin = new User()
+    admin.firstName = "Admin";
+    admin.lastName = "user";
+    admin.userName = "Admin";
+    admin.password = "123";
+
+    this.userList.push(admin);
+  }
 
   saveUser(user) {
     this.userList.push(user);

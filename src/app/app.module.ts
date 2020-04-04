@@ -13,6 +13,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     ContactPageComponent,
     UserRegisterComponent,
     UserListComponent,
-    TodoListComponent
+    TodoListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

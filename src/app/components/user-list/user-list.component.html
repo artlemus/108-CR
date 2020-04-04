@@ -1,6 +1,4 @@
-<h2>List of users</h2>
 
-There are: {{ allUsers.length }}
 <!-- 
 <ul>
     <li *ngFor="let c ofg allUsers">{{user.firstName}} {{user.lastName}}</li>
@@ -18,9 +16,14 @@ There are: {{ allUsers.length }}
   <label for="">phone: {{ User.phoneNumber }}</label>
 </div> -->
 
-<div *ngIf="allUsers.length > 1" class="alert alert-danger">
+<div *ngIf="allUsers.length == 0" class="alert alert-danger">
   <h6>please create a user</h6>
 </div>
+
+<h2>List of users</h2>
+
+There are: {{ allUsers.length }}
+
 
 <table *ngIf="allUsers.length > 0" class="table table-bordered table-striped">
   <thead class="thead-dark">
